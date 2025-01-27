@@ -16,53 +16,62 @@ _GitHub Copilot can help you code by offering autocomplete-style suggestions rig
 </header>
 
 <!--
-  <<< Author notes: Step 2 >>>
+  <<< Author notes: Step 3 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
-## Step 2: Seeing AI code suggestions in a C# file!
+## Step 3: View the GitHub Copilot tab with multiple suggestions
 
-_Nice work! :tada: You created a Codespace using a devcontainer file that installed Copilot!_
+_Nice work! You just used AI code suggestions within a C# file by using GitHub Copilot :sparkles:_
 
-GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, but works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++. The following samples are in C#, but other languages will work similarly.
+Keep in mind that as you continue to use copilot, you may not want some of the suggestions GitHub Copilot offers. GitHub Copilot will show you multiple suggestions in a new tab.
 
-Let's try this out utilizing C# for Copilot.
+### :keyboard: Activity: Pull the latest code to the Codespace repo.
 
-### :keyboard: Activity: Add a C# file and start writing code
+> **Note**
+> Pull MUST be done prior to the next activity.
 
-> **Note**:
-> If you closed the Codespace from above, please open it back up or create a new Codespace.
+1. Use the VS Code terminal to pull the latest code:
 
-1. Create a new .NET project by using the `.NET: New Project...` command and selecting `Console App`. 
-1. Select a folder and name the project **Skills**.
-1. Open `Program.cs`
-1. Verify your new file looks like:
-   ![VS code with a new Program.cs](./img/2-skills-dotnet-0.png)
-1. In the `Program.cs` file, remove any code and then type the following function header.
-
-   ```csharp
-   void CalculateNumbers(int var1, int var2)
-   {
+   ```
+   git pull
    ```
 
-   GitHub Copilot will automatically suggest an entire function body in grayed text. Below is an example of what you'll most likely see, but the exact suggestion may vary.
-   ![VS Code with completions](./img/2-skills-1.png)
+### :keyboard: Activity: Add another C# method and view all suggestions
 
-5. Press `Tab` to accept the suggestion.
+1. From inside the codespace in the Solution Explorer, right click on the project, create a new file. 
+
+> Note: If you closed the Codespace from above please open it back up or create a new Codespace.
+
+2. Select **Class** and name the file `Member.cs`
+3. In the `Member.cs` file, type the following function inside of the `Member` class.
+   ```
+   public strin
+   ```
+4. Stop typing and view the Copilot suggestion by hovering over the red squiggly and select the `...`
+5. Click `Open Completions Panel`. 
+
+   > **Note**
+   > If you don't see the copilot code block suggestion or the red squiggly and the three dots `...`, you can type `control + enter` to bring up the GitHub Copilot completions panel.
+
+6. Copilot will synthesize around 10 different code suggestions or press CTRL+Enter. You should see something like this:
+   ![VS Code showing pop up with Completions Panel](./img/3-copilot-hub-0.png)
+7. Find a solution you like and click `Accept Solution`.
+8. Your `Member.s` file will be updated with your solution.
 
 ### :keyboard: Activity: Push code to your repository from the codespace
 
-1. Use the VS Code terminal to add all files to the repository:
+1. Use the VS Code terminal to add the `Member.cs` file to the repository:
 
    ```
-   git add -A
+   git add Member.cs
    ```
 
 2. Next from the VS Code terminal stage and commit the changes to the repository:
 
    ```
-   git commit -m "Copilot first commit"
+   git commit -m "Copilot second commit"
    ```
 
 3. Finally from the VS Code terminal push to code to the repository:
