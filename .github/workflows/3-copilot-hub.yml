@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "Member.cs"
+      - "Skills/Member.cs"
     branches:
       - main
 
@@ -59,7 +59,7 @@ jobs:
       - name: Check package for axios version 0.21.2
         uses: skills/action-check-file@v1
         with:
-          file: "Member.cs"
+          file: "Skills/Member.cs"
           search: "public class Member"
 
       # In README.md, switch step 3 for step 4.
