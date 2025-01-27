@@ -55,11 +55,11 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches.
 
-      # Verify the PR updated package.json
-      - name: Check package.json
+      # Verify the PR updated Program.cs
+      - name: Check Program.cs
         uses: skills/action-check-file@v1
         with:
-          file: "Program.cs"
+          file: "Skills/Program.cs"
           search: "void CalculateNumbers"
 
       # In README.md, switch step 2 for step 3.
