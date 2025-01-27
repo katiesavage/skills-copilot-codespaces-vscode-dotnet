@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - "Comments.cs"
+      - "Skills/Comments.cs"
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -59,7 +59,7 @@ jobs:
       - name: Check workflow contents, jobs
         uses: skills/action-check-file@v1
         with:
-          file: "Comments.cs"
+          file: "Skills/Comments.cs"
           search: "create a method"
 
       # In README.md, switch step 3 for step X.
